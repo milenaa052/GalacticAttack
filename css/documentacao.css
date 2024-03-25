@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    margin: 5%;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#descricao h1 {
+    font-size: 2em;
+}
+
+.descricao {
+    margin: 5%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 33% 33% 33% 33%;
+}
+
+.grid .coluna {
+    border: 1px solid #4c94e1;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.imagens img{
+    width: 100%;
+    margin-top: 5%;
+}
+
+.gridElementos {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-top: 5%;
+}
+
+.gridElementos .elementos {
+    margin: 10px;
+    padding: 20px;
+    background: linear-gradient(#4c94e1, #030454);
+    text-align: center;
+    border-radius: 10px;
+}
+
+#regras p{
+    margin-top: 3%;
+}
