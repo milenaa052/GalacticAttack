@@ -1,0 +1,23 @@
+.grid .coluna {
+    border: 1px solid #4c94e1;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.imagens img{
+    width: 100%;
+    margin-top: 5%;
+}
+
+@media (width >= 758px) {
+    
+    .grid {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .grid .coluna {
+        width: 100%;
+    }
+}

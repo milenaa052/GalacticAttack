@@ -1,0 +1,19 @@
+.gridElementos .elementos {
+    margin: 10px;
+    padding: 20px;
+    background: linear-gradient(#4c94e1, #030454);
+    text-align: center;
+    border-radius: 10px;  
+}
+
+@media (width >= 865px) {
+    .gridElementos {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5%;
+    }
+    
+    .gridElementos .elementos {
+        width: 100%;
+    }
+}

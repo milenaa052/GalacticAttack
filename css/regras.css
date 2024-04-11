@@ -1,0 +1,9 @@
+#regras p{
+    margin-top: 10%;
+}
+
+@media (width >= 600px) {
+    #regras p{
+        margin-top: 3%;
+    }
+}

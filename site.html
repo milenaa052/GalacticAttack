@@ -6,15 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Descrição Breve">
     <link rel="shortcut icon" href="Imagens/FoguetePrincipal.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/modal.css">
-    <link rel="stylesheet" href="css/documentacao.css">
-    <link rel="shortcut icon" href="imagens/icone.png">
+    <link rel="stylesheet" href="/style.css">
     <title>Galactic Attack</title>
 </head>
 <body>
     <main>
         <div class="Banner">
+            <div class="menu">
+                <a href="javascript:mostrarMenu()" title="Menu" class="header-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+
             <div class="nav-container">
                 <div class="nav">
                     <div class="options">
@@ -98,16 +101,16 @@
                         <h2>Ficha Técnica</h2>
                         <div class="gridElementos">
                             <div class="elementos">
-                                Engine: Construct 3
+                                <p>Engine: Construct 3</p>
                             </div>
                             <div class="elementos">
-                                Plataforma: PC
+                               <p>Plataforma: PC</p>
                             </div>
                             <div class="elementos">
-                                Mecânica: Ataque e Sobrevivência
+                                <p>Mecânica: Ataque e Sobrevivência</p>
                             </div>
                             <div class="elementos">
-                                Dispositivos de Entrada: Teclado
+                               <p>Dispositivos de Entrada: Teclado</p>
                             </div>
                         </div>
                     </section>
@@ -181,19 +184,19 @@
                          
                         <div class="gridElementos">
                             <div class="elementos">
-                                Movimentaçao
+                                <p>Movimentaçao</p>
                             </div>
             
                             <div class="elementos">
-                                Tiros Espaciais
+                                <p>Tiros Espaciais</p>
                             </div>
             
                             <div class="elementos">
-                                Tiros Potentes
+                                <p>Tiros Potentes</p>
                             </div>
             
                             <div class="elementos">
-                                Campo de Defesa
+                                <p>Campo de Defesa</p>
                             </div>
                         </div>
                     </section>
@@ -244,3 +247,10 @@
     </main>
 </body>
 </html>
+
+<script>
+    function mostrarMenu() {
+        let menu = document.querySelector(".nav-container");
+        menu.classList.toggle("show");
+    }
+</script>

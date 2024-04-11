@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('/css/banner.css');
+@import url('/css/nav.css');
+@import url('/css/sobre.css');
+@import url('/css/fotos.css');
+@import url('/css/documentacao.css');
+@import url('/css/localJogo.css');
+@import url('/css/footer.css');
+@import url('/css/sobreJogo.css');
+@import url('/css/elementos.css');
+@import url('/css/personagens.css');
+@import url('/css/regras.css');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(#040a2e, #000);
+    color: #FFF;
+    font-family: 'Open Sans';
+}
+
+section {
+    padding-top: 3%;
+}
+
+footer {
+    width: 100%;
+}
+
+@media (width >= 1200px) {
+    body p {
+        font-size: 1.2em;
+    }
+
+    body h1, h2 {
+        font-size: 2em;
+    }
+
+    body h3 {
+        font-size: 1.5em;
+    }
+
+    .elementos p {
+        font-size: 1.3em;
+    }
+}

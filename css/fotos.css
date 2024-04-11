@@ -1,0 +1,16 @@
+.fotos .colunaFotos {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fotos .colunaFotos img {
+    width: 100%;
+}
+
+@media (width >= 600px) {
+  .fotos {
+    display: flex;
+    justify-content: space-between;
+  }
+}

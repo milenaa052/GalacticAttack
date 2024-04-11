@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    margin: 5%;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#descricao h1 {
+    font-size: 2em;
+}
+
+.descricao {
+    margin: 5%;
+}
