@@ -1,8 +1,7 @@
 .Banner {
-    background-image: url("../Imagens/backgroundSite.jpg");
-    height: 50vw;
+    background-image: url("../Imagens/backgroundSiteMobile.jpg");
+    height: 80vh;
     color: #FFF;
-    background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -11,14 +10,7 @@
 }
 
 .Banner h1 {
-    font-size: 5vw;
-}
-
-.tt {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
+    font-size: 10vw;
 }
 
 @media (width >= 600px) {
@@ -31,5 +23,9 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
+    }
+
+    .Banner h1 {
+        font-size: 6vw;
     }
 }
