@@ -14,6 +14,13 @@
     font-size: 5vw;
 }
 
+.tt {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
 @media (width >= 600px) {
     .Banner {
         background-image: url("../Imagens/backgroundSite.jpg");

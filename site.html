@@ -7,33 +7,30 @@
     <meta name="description" content="Descrição Breve">
     <link rel="shortcut icon" href="Imagens/FoguetePrincipal.png" type="image/x-icon">
     <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/b3b83db5db.js" crossorigin="anonymous"></script>
     <title>Galactic Attack</title>
 </head>
 <body>
+    <header>
+        <div class="menu">
+            <i id="botao" class="fa-solid fa-bars"></i>
+        </div>
+
+        <nav id="nav" class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#quem-somos">Quem Somos</a></li>
+                <li><a href="#fotos">Fotos</a></li>
+                <li><a href="#documentacao">Documentação</a></li>
+                <li><a href="#jogo">Jogo</a></li>
+                <li><a href="#contatos">Contato</a></li>
+            </div>
+        </nav>
+    </header>
+
     <main>
         <div class="Banner">
-            <div class="menu">
-                <a href="javascript:mostrarMenu()" title="Menu" class="header-menu">
-                    <i class="fa-solid fa-bars"></i>
-                </a>
-            </div>
-
-            <div class="nav-container">
-                <div class="nav">
-                    <div class="options">
-                        <a href="#">Inicio</a>
-                        <a href="#quem-somos">Quem Somos</a>
-                        <a href="#fotos">Fotos</a>
-                        <a href="#documentacao">Documentação</a>
-                        <a href="#jogo">Jogo</a>
-                        <a href="#contatos">Contato</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tt">
-                <h1>Galactic Attack</h1>
-            </div>
+            <h1>Galactic Attack</h1>
         </div>
         
         <section id="quem-somos">
@@ -118,8 +115,8 @@
                     <section id="personagens">
                         <h2>Personagens</h2>
             
-                        <div class="grid">
-                            <div class="coluna">
+                        <div class="personagensGrid">
+                            <div class="personagensColuna">
                                 <p>Personagem Principal</p>
                                 <h3>Foguete Principal</h3>
                                 <div class="imagens">
@@ -131,7 +128,7 @@
                                 </p>
                             </div>
 
-                            <div class="coluna">
+                            <div class="personagensColuna">
                                 <p>Inimigo 1</p>
                                 <h3>Grandes Meteoros</h3>
                                 <div class="imagens">
@@ -145,8 +142,8 @@
                             </div>
                         </div>
             
-                        <div class="grid">
-                            <div class="coluna">
+                        <div class="personagensGrid">
+                            <div class="personagensColuna">
                                 <p>Inimigo 2</p>
                                 <h3>Naves Alienígenas</h3>
                                 <div class="imagens">
@@ -159,7 +156,7 @@
                                 </p>
                             </div>
                 
-                            <div class="coluna">
+                            <div class="personagensColuna">
                                 <p>Inimigo 4</p>
                                 <h3>Etron</h3>
                                 <div class="imagens">
@@ -249,8 +246,11 @@
 </html>
 
 <script>
-    function mostrarMenu() {
-        let menu = document.querySelector(".nav-container");
-        menu.classList.toggle("show");
-    }
+    const botao = document.getElementById("botao")
+        const menu = document.getElementById("nav")
+
+        botao.addEventListener("click", () => {
+            menu.classList.toggle("mostrar")
+            botao.classList.toggle("fa-xmark")
+        })
 </script>

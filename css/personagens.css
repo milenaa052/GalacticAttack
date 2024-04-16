@@ -1,4 +1,4 @@
-.grid .coluna {
+.personagensGrid .personagensColuna {
     border: 1px solid #4c94e1;
     border-radius: 10px;
     margin: 20px;
@@ -12,12 +12,12 @@
 
 @media (width >= 758px) {
     
-    .grid {
+    .personagensGrid {
         display: flex;
         justify-content: space-between;
     }
 
-    .grid .coluna {
+    .personagensGrid .personagensColuna {
         width: 100%;
     }
 }
