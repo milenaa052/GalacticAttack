@@ -10,6 +10,7 @@
 @import url('/css/elementos.css');
 @import url('/css/personagens.css');
 @import url('/css/regras.css');
+@import url('/css/trilhaSonora.css');
 
 html {
     scroll-behavior: smooth;

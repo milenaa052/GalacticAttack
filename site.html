@@ -173,7 +173,46 @@
             
                     <section id="trilha-sonora">
                         <h2>Trilha Sonora</h2>
-                       <audio src=""></audio>
+                        <div class="audios">
+                            <div class="selecionaAudio">
+                                <p>Escudo ao apertar "SHIFT"</p>
+                                <audio src="Audios/escudo.mp3" controls></audio>
+                            </div>
+                            <div class="selecionaAudio">
+                                <p>Explosão das Naves</p>
+                                <audio src="Audios/explosaoNave.mp3" controls></audio>
+                            </div>
+                        </div>
+                        <div class="audios">
+                            <div class="selecionaAudio">
+                                <p>Som da tela Game Over</p>
+                                <audio src="Audios/gameOver.mp3" controls></audio>
+                            </div>
+                            <div class="selecionaAudio">
+                                <p>Quando o laser do inimigo (Etron) é ativado</p>
+                                <audio src="Audios/laserEtron.mp3" controls></audio>
+                            </div>
+                        </div>
+                        <div class="audios">
+                            <div class="selecionaAudio">
+                                <p>Música de Fundo</p>
+                                <audio src="Audios/musicaFundo.mp3" controls></audio>
+                            </div>
+                            <div class="selecionaAudio">
+                                <p>Som quando ganha o jogo</p>
+                                <audio src="Audios/parabens.mp3" controls></audio>
+                            </div>
+                        </div>
+                        <div class="audios">
+                            <div class="selecionaAudio">
+                                <p>Tiro do inimigo (Etron)</p>
+                                <audio src="Audios/tiroEtron.mp3" controls></audio>
+                            </div>
+                            <div class="selecionaAudio">
+                                <p>Tiro do Foguete Principal ao clicar "ENTER"</p>
+                                <audio src="Audios/tiroFoguetePrincipal.mp3" controls></audio>
+                            </div>
+                        </div>
                     </section>
             
                     <section id="elementos">
@@ -247,10 +286,10 @@
 
 <script>
     const botao = document.getElementById("botao")
-        const menu = document.getElementById("nav")
+    const menu = document.getElementById("nav")
 
-        botao.addEventListener("click", () => {
-            menu.classList.toggle("mostrar")
-            botao.classList.toggle("fa-xmark")
-        })
+    botao.addEventListener("click", () => {
+        menu.classList.toggle("mostrar")
+        botao.classList.toggle("fa-xmark")
+    })
 </script>
