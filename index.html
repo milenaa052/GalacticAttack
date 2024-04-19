@@ -18,12 +18,12 @@
 
         <nav id="nav" class="nav">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#quem-somos">Quem Somos</a></li>
-                <li><a href="#fotos">Fotos</a></li>
-                <li><a href="#documentacao">Documentação</a></li>
-                <li><a href="#jogo">Jogo</a></li>
-                <li><a href="#contatos">Contato</a></li>
+                <li><a href="#" class="link">Home</a></li>
+                <li><a href="#quem-somos" class="link">Quem Somos</a></li>
+                <li><a href="#fotos" class="link">Fotos</a></li>
+                <li><a href="#documentacao" class="link">Documentação</a></li>
+                <li><a href="#jogo" class="link">Jogo</a></li>
+                <li><a href="#contatos" class="link">Contato</a></li>
             </div>
         </nav>
     </header>
@@ -286,9 +286,17 @@
 <script>
     const botao = document.getElementById("botao")
     const menu = document.getElementById("nav")
+    const links = document.getElementsByClassName("link");
 
     botao.addEventListener("click", () => {
         menu.classList.toggle("mostrar")
         botao.classList.toggle("fa-xmark")
     })
+
+    for (let link of links) {
+        link.addEventListener("click", () => {
+            menu.classList.remove("mostrar");
+            botao.classList.remove("fa-xmark");
+        });
+    }
 </script>
