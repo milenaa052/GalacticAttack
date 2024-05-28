@@ -1,5 +1,5 @@
 .Banner {
-    background-image: url("../Imagens/backgroundSiteMobile.jpg");
+    background-image: url("../img/backgroundSiteMobile.jpg");
     height: 80vh;
     color: #FFF;
     background-size: cover;
@@ -15,7 +15,7 @@
 
 @media (width >= 600px) {
     .Banner {
-        background-image: url("../Imagens/backgroundSite.jpg");
+        background-image: url("../img/backgroundSite.jpg");
         height: 50vw;
         background-repeat: no-repeat;
         background-size: cover;
