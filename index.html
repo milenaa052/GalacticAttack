@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Descrição Breve">
     <link rel="shortcut icon" href="Imagens/FoguetePrincipal.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="/style.css">
     <script src="https://kit.fontawesome.com/b3b83db5db.js" crossorigin="anonymous"></script>
     <title>Galactic Attack</title>
@@ -75,179 +76,143 @@
             <div>
                 <p class="clique">Clique aqui para ver a documentação do jogo</p>
                 <div class="wrapper">
-                    <a href="#modal">Documentação</a>
+                    <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Documentação
+                    </a>
                 </div>
             </div>
-
-            <div id="modal">
-                <div class="modalConteudo">
-                    <section id="descricao">
-                        <h1>Galactic Attack</h1>
             
-                        <div class="descricao">
-                            <p>
-                                A terra está sob ameaça por membros de outros planetas devido a um
-                                conflito galático, proteja a Terra em sua nave XL7 a proteger seu 
-                                planeta de ataques e derrote o vilão Etron para que ele não destrua
-                                a sua casa.
-                            </p>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content" id="modalConteudo">
+                        <div class="border-bottom-0 modal-header">
+                            <button type="button" id="fecharModal" class="btn-close-white btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                    </section>
-    
-                    <section id="ficha-tecnica">
-                        <h2>Ficha Técnica</h2>
-                        <div class="gridElementos">
-                            <div class="elementos">
-                                <p>Engine: Construct 3</p>
-                            </div>
-                            <div class="elementos">
-                               <p>Plataforma: PC</p>
-                            </div>
-                            <div class="elementos">
-                                <p>Mecânica: Ataque e Sobrevivência</p>
-                            </div>
-                            <div class="elementos">
-                               <p>Dispositivos de Entrada: Teclado</p>
-                            </div>
-                        </div>
-                    </section>
-            
-                    <section id="personagens">
-                        <h2>Personagens</h2>
-            
-                        <div class="personagensGrid">
-                            <div class="personagensColuna">
-                                <p>Personagem Principal</p>
-                                <h3>Foguete Principal</h3>
-                                <div class="imagens">
-                                    <img src="Imagens/FoguetePrincipal.png" alt="Foto Foguete Principal" title="Foto Foguete Principal">
+                        <div class="modal-body"> 
+                            <section id="descricao">
+                                <h1>Galactic Attack</h1>
+                    
+                                <div class="descricao">
+                                    <p>
+                                        A terra está sob ameaça por membros de outros planetas devido a um
+                                        conflito galático, proteja a Terra em sua nave XL7 a proteger seu 
+                                        planeta de ataques e derrote o vilão Etron para que ele não destrua
+                                        a sua casa.
+                                    </p>
                                 </div>
-                                <p>
-                                    O foguete ira te ajudar na sua jornada, é um foguete 
-                                    altamente potente na velocidade e tiros espaciais.
-                                </p>
-                            </div>
-
-                            <div class="personagensColuna">
-                                <p>Inimigo 1</p>
-                                <h3>Grandes Meteoros</h3>
-                                <div class="imagens">
-                                    <img src="Imagens/Metero.png" alt="Foto Meteoros" title="Foto Meteoros">
+                            </section>
+            
+                            <section id="ficha-tecnica">
+                                <h2>Ficha Técnica</h2>
+                                <div class="gridElementos">
+                                    <div class="elementos">
+                                        <p>Engine: Construct 3</p>
+                                    </div>
+                                    <div class="elementos">
+                                        <p>Plataforma: PC</p>
+                                    </div>
+                                    <div class="elementos">
+                                        <p>Mecânica: Ataque e Sobrevivência</p>
+                                    </div>
+                                    <div class="elementos">
+                                        <p>Dispositivos de Entrada: Teclado</p>
+                                    </div>
                                 </div>
-                                <p>
-                                    Os meteoros são enviados pelo vilão Etron com o objetivo de
-                                    acertar a sua nave e destrui-las, utilize o seu lazer para
-                                    quebrar estes meteoros e continuar a sua missão.
-                                </p>
-                            </div>
-                        </div>
-            
-                        <div class="personagensGrid">
-                            <div class="personagensColuna">
-                                <p>Inimigo 2</p>
-                                <h3>Naves Alienígenas</h3>
-                                <div class="imagens">
-                                    <img src="Imagens/NaveAlienigena.png" alt="Foto Naves Alienígenas" title="Foto Naves Alienígenas">
+                            </section>
+                    
+                            <section id="personagens">
+                                <h2>Personagens</h2>
+                    
+                                <div class="personagensGrid">
+                                    <div class="personagensColuna">
+                                        <p>Personagem Principal</p>
+                                        <h3>Foguete Principal</h3>
+                                        <div class="imagens">
+                                            <img src="Imagens/FoguetePrincipal.png" alt="Foto Foguete Principal" title="Foto Foguete Principal">
+                                        </div>
+                                        <p>
+                                            O foguete ira te ajudar na sua jornada, é um foguete 
+                                            altamente potente na velocidade e tiros espaciais.
+                                        </p>
+                                    </div>
+        
+                                    <div class="personagensColuna">
+                                        <p>Inimigo 1</p>
+                                        <h3>Grandes Meteoros</h3>
+                                        <div class="imagens">
+                                            <img src="Imagens/Metero.png" alt="Foto Meteoros" title="Foto Meteoros">
+                                        </div>
+                                        <p>
+                                            Os meteoros são enviados pelo vilão Etron com o objetivo de
+                                            acertar a sua nave e destrui-las, utilize o seu lazer para
+                                            quebrar estes meteoros e continuar a sua missão.
+                                        </p>
+                                    </div>
                                 </div>
-                                <p>
-                                    As Naves Alienígenas é o próximo nível para que você vença
-                                    os seus inimigos, eles irão te atacar, desvie e atire neles
-                                    para que vença a batalha
-                                </p>
-                            </div>
-                
-                            <div class="personagensColuna">
-                                <p>Inimigo 3</p>
-                                <h3>Etron</h3>
-                                <div class="imagemEtron">
-                                    <img src="Imagens/Etron.png" alt="Foto Etron" title="Foto Etron">
+                    
+                                <div class="personagensGrid">
+                                    <div class="personagensColuna">
+                                        <p>Inimigo 2</p>
+                                        <h3>Naves Alienígenas</h3>
+                                        <div class="imagens">
+                                            <img src="Imagens/NaveAlienigena.png" alt="Foto Naves Alienígenas" title="Foto Naves Alienígenas">
+                                        </div>
+                                        <p>
+                                            As Naves Alienígenas é o próximo nível para que você vença
+                                            os seus inimigos, eles irão te atacar, desvie e atire neles
+                                            para que vença a batalha
+                                        </p>
+                                    </div>
+                        
+                                    <div class="personagensColuna">
+                                        <p>Inimigo 3</p>
+                                        <h3>Etron</h3>
+                                        <div class="imagemEtron">
+                                            <img src="Imagens/Etron.png" alt="Foto Etron" title="Foto Etron">
+                                        </div>
+                                        <p>
+                                            Etron é o vilão principal e mais poderoso para você derrotar,
+                                            utilize tiros especiais e se defenda. Se vencer você terá
+                                            salvo toda a população do planeta terra.
+                                        </p>
+                                    </div>
                                 </div>
+                            </section>
+                    
+                            <section id="elementos">
+                                <h2>Elementos</h2>
+                                    
+                                <div class="gridElementos">
+                                    <div class="elementos">
+                                        <p>Movimentaçao</p>
+                                    </div>
+                    
+                                    <div class="elementos">
+                                        <p>Tiros Espaciais</p>
+                                    </div>
+                    
+                                    <div class="elementos">
+                                        <p>Tiros Potentes</p>
+                                    </div>
+                    
+                                    <div class="elementos">
+                                        <p>Campo de Defesa</p>
+                                    </div>
+                                </div>
+                            </section>
+                    
+                            <section id="regras">
+                                <h2>Regras do Jogo</h2>
                                 <p>
-                                    Etron é o vilão principal e mais poderoso para você derrotar,
-                                    utilize tiros especiais e se defenda. Se vencer você terá
-                                    salvo toda a população do planeta terra.
+                                    Utilize as setas para cima e para baixo para se locomover, aperte ENTER
+                                    para atirar contra meteoros e naves, clique a tecla SHIFT para ativar o
+                                    campo de proteção contra o laser de Etron.
+                                    Não deixe os meteoros e as naves te acertar, sobreviva a todos eles e 
+                                    derrote o vilão para salvar a Terra.
                                 </p>
-                            </div>
+                            </section>
                         </div>
-                    </section>
-            
-                    <section id="trilha-sonora">
-                        <h2>Trilha Sonora</h2>
-                        <div class="audios">
-                            <div class="selecionaAudio">
-                                <p>Escudo ao apertar "SHIFT"</p>
-                                <audio src="Audios/escudo.mp3" controls></audio>
-                            </div>
-                            <div class="selecionaAudio">
-                                <p>Explosão das Naves</p>
-                                <audio src="Audios/explosaoNave.mp3" controls></audio>
-                            </div>
-                        </div>
-                        <div class="audios">
-                            <div class="selecionaAudio">
-                                <p>Som da tela Game Over</p>
-                                <audio src="Audios/gameOver.mp3" controls></audio>
-                            </div>
-                            <div class="selecionaAudio">
-                                <p>Quando o laser do inimigo (Etron) é ativado</p>
-                                <audio src="Audios/laserEtron.mp3" controls></audio>
-                            </div>
-                        </div>
-                        <div class="audios">
-                            <div class="selecionaAudio">
-                                <p>Música de Fundo</p>
-                                <audio src="Audios/musicaFundo.mp3" controls></audio>
-                            </div>
-                            <div class="selecionaAudio">
-                                <p>Som quando ganha o jogo</p>
-                                <audio src="Audios/parabens.mp3" controls></audio>
-                            </div>
-                        </div>
-                        <div class="audios">
-                            <div class="selecionaAudio">
-                                <p>Tiro do inimigo (Etron)</p>
-                                <audio src="Audios/tiroEtron.mp3" controls></audio>
-                            </div>
-                            <div class="selecionaAudio">
-                                <p>Tiro do Foguete Principal ao clicar "ENTER"</p>
-                                <audio src="Audios/tiroFoguetePrincipal.mp3" controls></audio>
-                            </div>
-                        </div>
-                    </section>
-            
-                    <section id="elementos">
-                        <h2>Elementos</h2>
-                         
-                        <div class="gridElementos">
-                            <div class="elementos">
-                                <p>Movimentaçao</p>
-                            </div>
-            
-                            <div class="elementos">
-                                <p>Tiros Espaciais</p>
-                            </div>
-            
-                            <div class="elementos">
-                                <p>Tiros Potentes</p>
-                            </div>
-            
-                            <div class="elementos">
-                                <p>Campo de Defesa</p>
-                            </div>
-                        </div>
-                    </section>
-            
-                    <section id="regras">
-                        <h2>Regras do Jogo</h2>
-                        <p>
-                            Utilize as setas para cima e para baixo para se locomover, aperte ENTER
-                            para atirar contra meteoros e naves, clique a tecla SHIFT para ativar o
-                            campo de proteção contra o laser de Etron.
-                            Não deixe os meteoros e as naves te acertar, sobreviva a todos eles e 
-                            derrote o vilão para salvar a Terra.
-                        </p>
-                    </section>
-                    <a href="#" class="fecharModal">x</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -260,43 +225,44 @@
                 </div>
             </div>
         </section>
-
-        <footer id="contatos">
-            <div class="logos">
-                <a href="https://www.linkedin.com/in/milena-santos-de-oliveira-709816192/" target="_blank">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-                <a href="mailto:milenasantosdeoliveira40@gmail.com" target="_blank">
-                    <i class="fa-solid fa-envelope"></i>
-                </a>
-                <a href="https://github.com/milenaa052" target="_blank">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-                <a href="https://api.whatsapp.com/send?phone=5544998301879&text=Ol%C3%A1%2C%20estava%20analisando%20seu%20portifólio%20e%20gostaria%20de%20entrar%20em%20contato." target="_blank">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </a>
-            </div>
-    
-            <p class="copyright">© Copyright 2024 - Desenvolvido por <span>Milena Santos de Oliveira</span></p>
-        </footer>
     </main>
+
+    <footer id="contatos">
+        <div class="logos">
+            <a href="https://www.linkedin.com/in/milena-santos-de-oliveira-709816192/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="mailto:milenasantosdeoliveira40@gmail.com" target="_blank">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://github.com/milenaa052" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=5544998301879&text=Ol%C3%A1%2C%20estava%20analisando%20seu%20portifólio%20e%20gostaria%20de%20entrar%20em%20contato." target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
+
+        <p class="copyright">© Copyright 2024 - Desenvolvido por <span>Milena Santos de Oliveira</span></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        const botao = document.getElementById("botao")
+        const menu = document.getElementById("nav")
+        const links = document.getElementsByClassName("link");
+    
+        botao.addEventListener("click", () => {
+            menu.classList.toggle("mostrar")
+            botao.classList.toggle("fa-xmark")
+        })
+    
+        for (let link of links) {
+            link.addEventListener("click", () => {
+                menu.classList.remove("mostrar");
+                botao.classList.remove("fa-xmark");
+            });
+        }
+    </script>
 </body>
 </html>
-
-<script>
-    const botao = document.getElementById("botao")
-    const menu = document.getElementById("nav")
-    const links = document.getElementsByClassName("link");
-
-    botao.addEventListener("click", () => {
-        menu.classList.toggle("mostrar")
-        botao.classList.toggle("fa-xmark")
-    })
-
-    for (let link of links) {
-        link.addEventListener("click", () => {
-            menu.classList.remove("mostrar");
-            botao.classList.remove("fa-xmark");
-        });
-    }
-</script>

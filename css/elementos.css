@@ -6,14 +6,6 @@
     border-radius: 10px;
 }
 
-@media (width >= 865px) {
-    .gridElementos {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 5%;
-    }
-    
-    .gridElementos .elementos {
-        width: 100%;
-    }
+.elementos p {
+    margin-bottom: 0;
 }
